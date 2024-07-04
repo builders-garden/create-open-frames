@@ -1,0 +1,41 @@
+{
+  "name": "create-open-frames",
+  "version": "1.0.1",
+  "description": "CLI for creating Open Frames with a slick terminal UI.",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "keywords": [
+    "cli",
+    "frames",
+    "open-frames"
+  ],
+  "bin": {
+    "create-open-frames": "./dist/index.js"
+  },
+  "homepage": "https://builders.garden",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/builders-garden/create-open-frames"
+  },
+  "author": "builders.garden",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ascii-art": "^1.4.3",
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^5.1.1",
+    "ascii-art": "^2.8.5",
+    "chalk": "4.1.2",
+    "ora": "^8.0.1"
+  }
+}
