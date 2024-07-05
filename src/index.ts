@@ -4,7 +4,10 @@ import chalk from "chalk";
 import { input, select } from "@inquirer/prompts";
 import { frames, handleFrameCreation } from "./frames.js";
 
-const handleSigTerm = () => process.exit(0);
+const handleSigTerm = () => {
+  console.log(`${chalk.red("Open Frame creation aborted.")}`);
+  process.exit(0);
+};
 
 process.on("SIGINT", handleSigTerm);
 process.on("SIGTERM", handleSigTerm);
@@ -16,17 +19,17 @@ const main = async () => {
     console.log(`created by 🌳 ${chalk.green("https://builders.garden")}`);
 
     const selectedOpenFrame = await select({
-      message: "select an open-frame template:",
+      message: "Select an Open Frames template:",
       choices: frames,
     });
 
     const name = await input({
-      message: "enter your desired name:",
+      message: "Enter your desired folder name:",
       default: "open-frame",
     });
 
     const directory = await input({
-      message: "enter the directory where you want to create the open-frame:",
+      message: "Enter the director where you want to create your Open Frame:",
       default: "./",
     });
 
@@ -39,7 +42,7 @@ const main = async () => {
 
     handleFrameCreation(selectedOpenFrame, path);
   } catch (error) {
-    console.log(`${chalk.red("open-frame creation aborted.")}`);
+    console.log(`${chalk.red("Open Frame creation aborted.")}`);
   }
 };
 
