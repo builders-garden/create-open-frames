@@ -12,14 +12,14 @@ export type Frame = {
 
 export const frames: Frame[] = [
   {
-    description: "Starter suite for Open Frames using Frog and Hono.",
-    value: "frog-hono",
-    name: "Frog + Hono",
-  },
-  {
     description: "Starter suite for Open Frames using Frames.js and NextJS.",
     value: "framesjs-nextjs",
     name: "Frames.js + NextJS",
+  },
+  {
+    description: "Starter suite for Open Frames using Frog and Hono.",
+    value: "frog-hono",
+    name: "Frog + Hono",
   },
   {
     description: "Starter suite for Open Frames using OnchainKit and NextJS.",
