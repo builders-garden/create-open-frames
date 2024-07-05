@@ -1,6 +1,6 @@
 {
   "name": "create-open-frames",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "CLI for creating Open Frames with a slick terminal UI.",
   "exports": {
     ".": "./dist/index.js"
@@ -9,8 +9,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "tsc && chmod +x ./dist/index.js",
-    "publish": "yarn build && yarn publish"
+    "build": "tsc && chmod +x ./dist/index.js"
   },
   "type": "module",
   "keywords": [
