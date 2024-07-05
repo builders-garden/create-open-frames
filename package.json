@@ -1,6 +1,6 @@
 {
   "name": "create-open-frames",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "CLI for creating Open Frames with a slick terminal UI.",
   "exports": {
     ".": "./dist/index.js"
